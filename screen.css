@@ -1,32 +1,107 @@
 /* PAGE FOUNDATION ELEMENTS */
+.max-w-md {
+    max-width: 500rem;
+}
+
+/* HEADER */
+.navigation ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+.navigation li {
+    float: left;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.navigation li a {
+    display: block;
+    padding: 8px;
+    background-color: aliceblue;
+}
+a.active {
+    font-weight: bold;
+}
+.tags ul li {
+    flex: auto;
+    justify-items: center;
+}
+
+/* SCREEN STYLES */
 body {
     background-color: aliceblue;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
+h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 380%;
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+}
+h2 {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+.about {
+    margin: auto;
+}
+.about h1 {
+    padding: auto;
+    margin: auto;
+}
+.about p {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: auto;
+}
+.tags {
+    display: grid;
+    align-content: center;
+}
+.tags p {
+    text-align: center;
+    margin: auto;
+}
+.tags svg {
+    display: block;
+    margin: auto;
+}
+.tags ul {
+    padding-top: 20px;
+    margin: auto;
+}
+.tags circle {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-/* SCREEN STYLES */
-
-
-
-/* UNIVERSAL HEADER */
-
-    /* Scroll container & scroll text */
-
-    /* Navigation bar */
-    .navigation ul li {
-        list-style-type: none;
-        margin: auto;
-        flex: items-center;
+/* for Firefox */
+@-moz-keyframes my-animation {
+    from { -moz-transform: translateX(100%); }
+    to { -moz-transform: translateX(-100%); }
+}
+/* for Chrome */
+@-webkit-keyframes my-animation {
+    from { -webkit-transform: translateX(100%); }
+    to { -webkit-transform: translateX(-100%); }
+}
+@keyframes my-animation {
+    from {
+      -moz-transform: translateX(100%);
+      -webkit-transform: translateX(100%);
+      transform: translateX(100%);
     }
-
-    a.active {
-        font-weight: bold;
+    to {
+      -moz-transform: translateX(-100%);
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
     }
-
-    #tags. {
-
-    }
-
-    .tag-links ul li
+}
