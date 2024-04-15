@@ -1,2 +1,2 @@
-# boilerplate
-Basic HTML and CSS setup for simple web design
+# YouX
+Basic HTML & CSS codespace for a sample profile page on a UX-focused social networking site called YouX.
